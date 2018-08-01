@@ -1,6 +1,6 @@
 var addRippleEffect = function (e) {
     var target = e.target;
-    if (target.className.indexOf("ink") === -1) { return false; }
+    if (target.className.spli(' ').indexOf("ink") === -1) { return false; }
     var rect = target.getBoundingClientRect();
     var ripple = target.querySelector('.ripple');
     if (!ripple) {
